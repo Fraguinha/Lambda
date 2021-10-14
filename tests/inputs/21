@@ -1,0 +1,2 @@
+include "lib/std.lambda";
+LE 2 3

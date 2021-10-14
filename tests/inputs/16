@@ -1,0 +1,2 @@
+include "lib/std.lambda";
+S (S (K (S (K S) K)) S) (K K) (* C *)

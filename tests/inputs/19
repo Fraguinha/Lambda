@@ -1,0 +1,2 @@
+include "lib/std.lambda";
+W K (* I *)

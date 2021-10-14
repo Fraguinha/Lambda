@@ -1,0 +1,2 @@
+include "lib/std.lambda";
+EQ 1 1
