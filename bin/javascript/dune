@@ -1,0 +1,8 @@
+(executable
+ (name main)
+ (libraries interpreter js_of_ocaml js_of_ocaml-ppx)
+ (preprocess
+  (pps js_of_ocaml-ppx))
+ (flags -w +A-4-70 -warn-error +A)
+ (modes js)
+ (promote (until-clean)))

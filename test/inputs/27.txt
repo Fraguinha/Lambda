@@ -1,0 +1,2 @@
+include "standard/library.lambda";
+MUL 2 3 f x

@@ -1,0 +1,2 @@
+include "standard/library.lambda";
+EQ 1 1

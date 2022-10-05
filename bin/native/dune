@@ -1,0 +1,6 @@
+(executable
+ (name main)
+ (libraries interpreter)
+ (flags -w +A-4-70 -warn-error +A)
+ (modes native)
+ (promote (until-clean)))

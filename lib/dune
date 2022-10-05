@@ -1,0 +1,9 @@
+(ocamllex
+ (modules lexer))
+
+(menhir
+ (modules parser))
+
+(library
+ (name interpreter)
+ (modules lexer parser ast interpreter lambda printer))

@@ -1,0 +1,2 @@
+include "standard/library.lambda";
+SUB 5 3 f x

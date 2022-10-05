@@ -1,0 +1,66 @@
+(* Combinators *)
+
+S = \xyz.xz(yz);
+K = \xy.x;
+I = \x.x;
+
+B = \xyz.x(yz);
+C = \xyz.xzy;
+W = \xy.xyy;
+
+O = \x.xx\x.xx;
+Y = \f.(\x.f(xx))(\x.f(xx));
+
+(* Booleans Conditionals *)
+
+TRUE = \xy.x;
+FALSE = \xy.y;
+
+IF = \pxy.pxy;
+
+OR = \pq.IF p TRUE q;
+AND = \pq.IF p q FALSE;
+NOT = \pq.IF p FALSE TRUE;
+
+(* Data Structures *)
+
+PAIR = \xyf.fxy;
+
+FIRST = \p.p TRUE;
+SECOND = \p.p FALSE;
+
+(* Numbers and Arithmetic *)
+
+SUCC = \nfx.f(nfx);
+PRED = \nfx.n(\gh.h(gf))(\u.x)(\u.u);
+
+0 = \fx.x;
+1 = SUCC 0;
+2 = SUCC 1;
+3 = SUCC 2;
+4 = SUCC 3;
+5 = SUCC 4;
+6 = SUCC 5;
+7 = SUCC 6;
+8 = SUCC 7;
+9 = SUCC 8;
+
+ADD = \mnfx.mf(nfx);
+MUL = \mnfx.m(nf)x;
+EXP = \mnfx.(nm)fx;
+SUB = \mn.n PRED m;
+
+ZERO = \n.n (\x.FALSE) TRUE;
+LE = \mn.ZERO (SUB m n);
+EQ = \mn.AND (LE m n) (LE n m);
+
+(* Lists *)
+
+[] = PAIR TRUE TRUE;
+
+:: = \ht.PAIR FALSE (PAIR h t);
+
+NULL = FIRST;
+
+HEAD = \z.FIRST (SECOND z);
+TAIL = \z.SECOND (SECOND z);

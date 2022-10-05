@@ -1,0 +1,2 @@
+include "standard/library.lambda";
+S S (S K) (* W *)

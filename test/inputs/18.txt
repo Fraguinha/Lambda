@@ -1,0 +1,2 @@
+include "standard/library.lambda";
+B (B (B W) C) (B B) (* S *)
